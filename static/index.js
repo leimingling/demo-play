@@ -341,11 +341,11 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 49) return '贫弱！贫弱！';
-    if (score <= 99) return '不做人啦';
-    if (score <= 149) return '真的是嗨到不行';
-    if (score <= 199) return '您';
-    return '人？';
+    if (score <= 30) return '小鲨鱼要哭啦';
+    if (score <= 60) return '小鲨鱼表示赞赏';
+    if (score <= 90) return '小鲨鱼要膜拜你啦';
+    if (score <= 120) return '小鲨鱼只有敬佩啦';
+    return '你真的没开挂？';
 }
 
 function toStr(obj) {
@@ -436,4 +436,3 @@ document.onkeydown = function(e) {
     }
 }
 
-console.log("不修改，好嘛？乱传又有什么用呢？(ˉ▽ˉ；)...")
